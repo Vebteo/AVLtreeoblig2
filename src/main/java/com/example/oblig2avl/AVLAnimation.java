@@ -81,7 +81,8 @@ public class AVLAnimation extends Application {
                 for (int i = 0; i < 10; i++) {
                     Random r = new Random();
                     char c = (char)(r.nextInt(26) + 'A');
-                    view.getTree().insert(c);
+                    String s = String.valueOf(c);
+                    view.getTree().insert(s);
                     view.displayTree();
                 }
             }
